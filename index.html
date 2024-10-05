@@ -7,7 +7,7 @@
   <meta name="Description" content="This is jameersportfolio website to know more about him, click on it.">
   <meta name="keywords" content="Portfolio, developer,website,webpages,resume,jameersportfolio">
   <meta name="author" content="Jameer Maujan">
- 
+  <link rel="icon" href="page_logo.png">
   <title>Jameer - Portfolio</title>
   <!-- Include the Tailwind CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -71,7 +71,120 @@
       text-decoration: none;
       color: #333;
       font-size: 20px;
+      
     }
+    *::selection{
+      background-color: black;
+      color: white;
+    }
+
+
+    .logoimg{
+  border: 1px solid;
+  border-radius: 20px;
+  height: 2.6rem;
+  opacity: 50;
+  box-shadow: 2px 2px 8px 3px #45a049;
+  width: 10rem;
+  cursor:default;
+  background-size: cover;
+}
+#menus li a{
+  font-weight: bold;
+  box-shadow: 3px 2px 5px#45a049;
+ 
+ 
+}
+    
+#HS{
+  background-color: #1d341f;   
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-image: url("Hero.jpg");
+  background-size: cover;
+  height: 90vh;   
+
+}
+
+#hr{
+
+ display: block;
+ text-align: center;
+ flex-wrap:nowrap;
+ justify-content: center;
+ align-items: center;
+ 
+  
+}
+#hrtxt{
+  
+  display: block;
+  font-family: 'Times New Roman', Times, serif ;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  letter-spacing: 1px;
+}
+
+
+@media ( max-width:450px){
+  #menus li a{
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    font-size: .7rem;
+
+
+  }
+  #hr{
+    font-size: 2em;
+
+  }
+
+  .cn{
+ 
+    display: block;
+    height: 350px;
+    width: 600px;
+}
+
+#hrtxt{
+  
+  box-sizing: border-box;
+  
+  width: 433px;
+    height: 145px;
+    
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+
+  #HS{
+  background-color: #1d341f;   
+  display: flex;
+  height: 60vh;   
+
+}
+
+
+  .logoimg{
+  border: 1px solid;
+  border-radius: 20px;
+  height: 1.3rem;
+  opacity: 50;
+  box-shadow: 2px 2px 8px 3px #45a049;
+  width: 4rem;
+  cursor:default;
+  background-size: cover;
+}
+
+
+}
+
+
+
+
   </style>
 </head>
 
@@ -80,8 +193,8 @@
   <!-- Navigation -->
   <nav class="bg-black shadow p-4">
     <div class="container mx-auto flex justify-between items-center">
-      <a href="#" class="text-xl font-semibold text-white">Jameer Maujan</a>
-      <ul class="flex space-x-4">
+      <a href="#" class="text-xl font-semibold text-white"><img src="logo.jpeg" class="logoimg" alt=""></a>
+      <ul class="flex space-x-4" id="menus">
         <li><a href="#about" class="text-gray-600 hover:text-green-300 ">About</a></li>
         <li><a href="#projects" class="text-gray-600 hover:text-green-300 ">Projects</a></li>
         <li><a href="#resume" class="text-gray-600 hover:text-green-300 ">Resume</a></li>
@@ -91,10 +204,10 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="bg-blue-500 text-white text-center py-20">
-    <div class="container mx-auto">
-      <h1 class="text-4xl font-bold mb-4">Hello, I'm Jameer Maujan</h1>
-      <p class="text-lg">Hey there! I'm a friendly and passionate Java programmer who's eager to help make a positive
+  <header class="text-white text-center py-20" id="HS">
+    <div class="cn ">
+      <h1 class="text-5xl font-bold mb-5" id="hr">Hello, I'm Jameer Maujan</h1>
+      <p class="text-lg" id="hrtxt">Hey there! I'm a friendly and passionate Java programmer who's eager to help make a positive
         impact. I have some great experience developing dynamic web projects using Java technology and using frameworks
         like Spring Boot, JSP, and Hibernate. I'm here to lend my skills and expertise to any project, and I'm always
         excited to learn and grow as a developer. Let's work together to create something amazing!</p>
@@ -105,15 +218,15 @@
 
 
   <section id="about" class="py-16 relative bg-cover bg-center"
-    style="background-image: url('About\ me.png'); background-size: cover ;">
+    style="background-image: url('istockphoto-1964213422-612x612.jpg'); background-size: cover ;">
     <div class="absolute inset-0 bg-black opacity-50"></div>
     <div class="container mx-auto relative">
       <h2 class="text-4xl font-bold text-white mb-8">About Me</h2>
-      <p class="text-gray-400 leading-relaxed mb-4">I'm a java programmer with a passion for crafting engaging and
+      <p class="text-gray-400 leading-relaxed mb-4" style="margin-left: 10px; margin-right: 10px;">I'm a java programmer with a passion for crafting engaging and
         user-friendly and dynamic web experiences.</p>
       <button onclick="toggleDetails()" class="bg-blue-500 text-white px-4 py-2 rounded">Read more</button>
       <div id="additionalDetails" class="hidden mt-4">
-        <p class="text-gray-400 leading-relaxed">Greetings,
+        <p class="text-gray-400 leading-relaxed" style="margin-left: 10px; margin-right: 10px;">Greetings,
 
           I would like to share with you some information about me I'm Jameer Shafik Maujan, a skilled and
           detail-oriented Java programmer who is passionate about contributing to innovation in problem-solving and
@@ -143,10 +256,10 @@
   <section id="resume" class="py-16 bg-gray-400">
     <div class="container mx-auto">
       <h2 class="text-2xl font-bold mb-8">Resume</h2>
-      <p class="text-gray-700 leading-relaxed mb-4">
+      <p class="text-gray-700 leading-relaxed mb-4" style="margin-left: 10px;">
         Download my resume to learn more about my skills and experience.
       </p>
-      <a href="JameerMaujan_Resume.pdf" download="JameerMaujan_Resume.pdf"
+      <a href="updatedresume.pdf" download="JameerMaujan_Resume.pdf"
         class="bg-blue-500 text-white px-4 py-2 rounded">Download Resume</a>
     </div>
   </section>
@@ -162,12 +275,20 @@
         <div class="p-4 bg-white shadow-md rounded-md bg-opacity-40">
           <h3 class="text-xl font-bold mb-2">Project 1</h3>
           <p class="text-gray-700">Description.<br>
-            <Li style="text-decoration: underline;"><b>Academic Year Project</b></Li>
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are currently working
-            on a cafe management website for our academic year project and we are confident in our abilities to develop
-            a dynamic website using Java technology and frameworks. The project is well underway and we are on track to
-            complete it soon. With three dedicated members working on the project, we have distributed tasks effectively
-            to ensure a well-managed and successful outcome.
+            <Li style="text-decoration: underline;"><strong>Academic Year Project</strong></Li>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We have completed our academic year project on the cafe
+            management website. From this I had learnt a lot of things and
+            strategies that are helpful to me to learn new things which
+            means how to work on real time projects and I also get
+            teamwork experience from this project.
+            In this project my responsibility is to make attractive and
+            responsive design and front end development activity this
+            project was developed in aap.net core. we are three members
+            involved in this project to achieve team experience both two
+            friends are familiar with .net that why we decided to develop
+            the project in asp.net core and I have done all designing part in
+            the project and we develop this project successfully.
+
           </p>
         </div>
         <!-- Add more project cards as needed -->
@@ -194,6 +315,7 @@
           <textarea id="message" name="message" rows="4" required></textarea>
           <input class="submit" type="submit" value="Send Message" id="sub">
           <h2 id="msg" class="msg"></h2>
+          
           <!-- <button type="button">Send Message</button> -->
 
         </form>
@@ -214,16 +336,17 @@
     let form = document.querySelector("form");
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      document.querySelector("#sub").value = "submiting....";
+      document.querySelector("#sub").value="Submitting...";
       let data = new FormData(form);
-      fetch("https://script.google.com/macros/s/AKfycbyo-axvesv0zM53Y4ka9tRp8tc6uqjaX_z2tkPQFAXqcGRYiao0GloKHlhQyjzXgeQ/exec", {
+      fetch("https://sheetdb.io/api/v1/kcx24ohf5mypp", {
         method: "POST",
         body: data
       })
         .then(res => res.text())
         .then(data => {
-          document.querySelector("#msg").innerHTML = data;
+          document.querySelector("#msg").innerHTML ="Successfully";
           document.querySelector("#sub").value = "submit";
+          form.reset();
         });
 
 
