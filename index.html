@@ -90,8 +90,11 @@
   background-size: cover;
 }
 #menus li a{
-  font-weight: bold;
+  font-weight: 500;
   box-shadow: 3px 2px 5px#45a049;
+  border-radius: 4px;
+  padding: 1px;
+  margin-right: 1px;
  
  
 }
@@ -121,8 +124,9 @@ align-items: center;
   
   display: block;
   font-family: 'Times New Roman', Times, serif ;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
   letter-spacing: 1px;
 }
 
@@ -131,13 +135,14 @@ align-items: center;
   #menus li a{
     display: flex;
     margin: 0%;
-    padding: 0%;
+    padding: 2px;
     font-size: .7rem;
 
 
   }
   #hr{
-    font-size: 2em;
+    font-size:2em;
+    
 
   }
 
@@ -145,18 +150,29 @@ align-items: center;
  
     display: block;
     height: 350px;
-    width: 600px;
+    width: 700px;
 }
 
 #hrtxt{
   
   box-sizing: border-box;
-  
-  width: 433px;
-    height: 145px;
+  overflow-block: auto;
+  width: auto;
+    height: auto;
+    color: #f6f9f6fa;
+    background-color: #17758f1e;
+    border: 2px solid;
+    box-shadow: 1px 1px 30px white;
+    border-style: groove;
+    padding: 3px;
+    text-transform: capitalize;
+    text-align: justify;
+    border-radius: 10px;
+    overflow: visible;
+    font-size: medium;
+   
     
-  margin-left: 2rem;
-  margin-right: 2rem;
+
 }
 
 
@@ -191,7 +207,7 @@ align-items: center;
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
   <!-- Navigation -->
-  <nav class="bg-black shadow p-4">
+  <nav class="bg-black  " style="background-color: #050606; height: 3.3rem; align-items: center;display: flex;">
     <div class="container mx-auto flex justify-between items-center">
       <a href="#" class="text-xl font-semibold text-white"><img src="logo.jpeg" class="logoimg" alt=""></a>
       <ul class="flex space-x-4" id="menus">
@@ -204,10 +220,10 @@ align-items: center;
   </nav>
 
   <!-- Hero Section -->
-  <header class="text-white text-center py-20" id="HS">
+  <header id="HS">
     <div class="cn ">
       <h1 class="text-5xl font-bold mb-5" id="hr">Hello, I'm Jameer Maujan</h1>
-      <p class="text-lg" id="hrtxt">Hey there! I'm a friendly and passionate Java programmer who's eager to help make a positive
+      <p id="hrtxt">Hey there! I'm a friendly and passionate Java programmer who's eager to help make a positive
         impact. I have some great experience developing dynamic web projects using Java technology and using frameworks
         like Spring Boot, JSP, and Hibernate. I'm here to lend my skills and expertise to any project, and I'm always
         excited to learn and grow as a developer. Let's work together to create something amazing!</p>
